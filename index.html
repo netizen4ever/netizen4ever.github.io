@@ -1,128 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>East Rock SCM LLC</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="logo.png" type="image/png" />
   <style>
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: #f4f4f4;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
     }
+
     header {
-      background: linear-gradient(to right, #002868, #bf0a30);
-      padding: 20px;
+      background: linear-gradient(to right, #002855, #a71930);
+      color: white;
+      padding: 20px 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      color: white;
     }
+
     header img {
-      height: 60px;
-    }
-    header h1 {
-      margin-left: 20px;
-      font-size: 2em;
-    }
-    nav {
+      height: 50px;
       margin-right: 20px;
     }
+
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 15px;
+      margin-left: 30px;
       font-weight: bold;
     }
+
     .hero {
-      background: url('https://images.unsplash.com/photo-1581091870622-2e14619d79dd') no-repeat center center/cover;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 1px 1px 5px black;
-    }
-    .hero h2 {
-      font-size: 2.5em;
-    }
-    .content {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      padding: 40px;
-      background: white;
-    }
-    .card {
-      background: #f9f9f9;
-      padding: 20px;
-      border-left: 5px solid #002868;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    .card h3 {
-      margin-top: 0;
-    }
-    .button-container {
+      padding: 60px 20px;
       text-align: center;
-      margin: 40px;
+      background-color: #e6edf6;
     }
-    .button-container a {
-      background: #002868;
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #002855;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .section {
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+    }
+
+    .card h3 {
+      border-bottom: 2px solid #002855;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      color: #002855;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #002855;
       color: white;
-      padding: 12px 25px;
+      font-size: 14px;
+    }
+
+    .btn {
+      background-color: #002855;
+      color: white;
+      padding: 12px 24px;
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
     }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
+
+    .btn:hover {
+      background-color: #a71930;
     }
   </style>
 </head>
+
 <body>
   <header>
     <div style="display: flex; align-items: center;">
-      <img src="logo.png" alt="East Rock SCM Logo" />
-      <h1>East Rock SCM LLC</h1>
+      <img src="logo.png" alt="Logo" />
+      <h2>East Rock SCM LLC</h2>
     </div>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Capabilities</a>
-      <a href="#">Contact</a>
+      <a href="#about">About</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
-  <div class="hero">
-    <h2>Trusted SDVOSB Partner for Government Procurement</h2>
-  </div>
-  <div class="content">
+
+  <section class="hero">
+    <h1>Trusted SDVOSB Partner for Government Procurement</h1>
+    <p>Veteran-led logistics and sourcing solutions for federal and state agencies</p>
+    <a href="East_Rock_SCM_Capabilities_Statement_FINAL%20(1).pdf" class="btn" target="_blank">View Capabilities Statement</a>
+  </section>
+
+  <section class="section" id="capabilities">
     <div class="card">
       <h3>Core Competencies</h3>
-      <p>Procurement, Logistics, Medical Supply Delivery, Furniture Installation, Grounds Maintenance</p>
+      <ul>
+        <li>Procurement, Logistics, Medical Supply Delivery</li>
+        <li>Furniture Installation, Janitorial Services</li>
+        <li>Grounds Maintenance & Facility Services</li>
+      </ul>
     </div>
+
     <div class="card">
       <h3>Differentiators</h3>
-      <p>Veteran-led, Agile, Customer-Focused, Fully Compliant with Federal Acquisition Standards</p>
+      <ul>
+        <li>Veteran-owned, agile, small business partner</li>
+        <li>Responsive, reliable, and competitive</li>
+        <li>Deep understanding of federal acquisition</li>
+      </ul>
     </div>
+
     <div class="card">
       <h3>NAICS / PSC Codes</h3>
-      <p>337127, 541614, 561720<br/>PSC: 6515, J070, R706</p>
+      <ul>
+        <li>337127, 541614, 561720</li>
+        <li>423450, 423210</li>
+        <li>PSC: 6515, J070, R706</li>
+      </ul>
     </div>
+
     <div class="card">
       <h3>Veteran Pledge</h3>
-      <p>We honor service and commitment by empowering veteran employment and excellence in delivery.</p>
+      <p>Led by a U.S. Army combat veteran, we honor trust, duty, and service by providing procurement excellence to the agencies who serve our country.</p>
     </div>
-  </div>
-  <div class="button-container">
-    <a href="East_Rock_SCM_Capabilities_Statement_FINAL.pdf" target="_blank">View Our Capabilities Statement (PDF)</a>
-  </div>
-  <footer>
-    Contact: daniel@eastrockscmllc.com | (703) 389-9222
+  </section>
+
+  <footer id="contact">
+    <p>Contact: daniel@eastrockscmllc.com | (703) 389-9222 | www.eastrockscmllc.com</p>
+    <p>&copy; 2025 East Rock SCM LLC - All Rights Reserved.</p>
   </footer>
 </body>
+
 </html>
