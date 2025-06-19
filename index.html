@@ -1,32 +1,128 @@
-
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>East Rock SCM LLC</title>
-        <style>
-            body { font-family: Arial, sans-serif; margin: 40px; }
-            .container { max-width: 800px; margin: auto; text-align: center; }
-            h1 { color: #1e3a8a; }
-            a.button {
-                display: inline-block;
-                margin-top: 20px;
-                padding: 10px 20px;
-                font-size: 18px;
-                color: white;
-                background-color: #1e3a8a;
-                text-decoration: none;
-                border-radius: 5px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Welcome to East Rock SCM LLC</h1>
-            <p>Service-Disabled Veteran-Owned Small Business (SDVOSB)</p>
-            <a class="button" href="East_Rock_SCM_Capabilities_Statement_FINAL.pdf" target="_blank">View Capabilities Statement</a>
-        </div>
-    </body>
-    </html>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>East Rock SCM LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #002868, #bf0a30);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+    }
+    header img {
+      height: 60px;
+    }
+    header h1 {
+      margin-left: 20px;
+      font-size: 2em;
+    }
+    nav {
+      margin-right: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581091870622-2e14619d79dd') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 5px black;
+    }
+    .hero h2 {
+      font-size: 2.5em;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      background: white;
+    }
+    .card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-left: 5px solid #002868;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .button-container {
+      text-align: center;
+      margin: 40px;
+    }
+    .button-container a {
+      background: #002868;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="logo.png" alt="East Rock SCM Logo" />
+      <h1>East Rock SCM LLC</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Capabilities</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <h2>Trusted SDVOSB Partner for Government Procurement</h2>
+  </div>
+  <div class="content">
+    <div class="card">
+      <h3>Core Competencies</h3>
+      <p>Procurement, Logistics, Medical Supply Delivery, Furniture Installation, Grounds Maintenance</p>
+    </div>
+    <div class="card">
+      <h3>Differentiators</h3>
+      <p>Veteran-led, Agile, Customer-Focused, Fully Compliant with Federal Acquisition Standards</p>
+    </div>
+    <div class="card">
+      <h3>NAICS / PSC Codes</h3>
+      <p>337127, 541614, 561720<br/>PSC: 6515, J070, R706</p>
+    </div>
+    <div class="card">
+      <h3>Veteran Pledge</h3>
+      <p>We honor service and commitment by empowering veteran employment and excellence in delivery.</p>
+    </div>
+  </div>
+  <div class="button-container">
+    <a href="East_Rock_SCM_Capabilities_Statement_FINAL.pdf" target="_blank">View Our Capabilities Statement (PDF)</a>
+  </div>
+  <footer>
+    Contact: daniel@eastrockscmllc.com | (703) 389-9222
+  </footer>
+</body>
+</html>
