@@ -1,119 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>East Rock SCM LLC</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <style>
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      color: #1a1a1a;
     }
-
     header {
-      background: linear-gradient(to right, #001f3f, #b3002d);
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      background: linear-gradient(to right, #0d1b2a, #9d2235);
       color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
     }
-
-    .logo-container {
+    .logo-section {
       display: flex;
       align-items: center;
     }
-
-    .logo-container img {
-      height: 240px;
-      margin-right: 24px;
+    .logo-section img {
+      height: 64px;
+      margin-right: 16px;
     }
-
+    .logo-section span {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
     nav a {
       color: white;
-      margin-left: 30px;
       text-decoration: none;
-      font-weight: 600;
+      margin-left: 30px;
+      font-weight: bold;
     }
-
     .hero {
       background-color: #e6f0fa;
       text-align: center;
-      padding: 60px 20px;
+      padding: 40px 20px;
     }
-
     .hero h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-      color: #002b5c;
+      font-size: 2rem;
+      color: #003366;
     }
-
     .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
-      color: #333;
+      margin: 10px 0 20px;
+      font-size: 1.1rem;
     }
-
-    .hero a.button {
-      background-color: #002b5c;
+    .hero button {
+      background-color: #003366;
       color: white;
+      border: none;
       padding: 12px 24px;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 6px;
-      font-size: 16px;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
     }
-
-    .cards {
+    .info-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 40px 20px;
-      background-color: #f4f4f4;
+      padding: 30px;
+      gap: 24px;
     }
-
-    .card {
+    .info-card {
       background-color: white;
-      padding: 24px;
-      margin: 12px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      flex: 1 1 260px;
-      max-width: 320px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      flex: 1 1 240px;
+      max-width: 300px;
     }
-
-    .card h3 {
-      border-bottom: 2px solid #002b5c;
-      padding-bottom: 8px;
-      margin-bottom: 12px;
-      color: #002b5c;
-      font-size: 18px;
+    .info-card h2 {
+      font-size: 1.2rem;
+      color: #003366;
+      border-bottom: 2px solid #003366;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
     }
-
-    .card ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-
     footer {
-      background-color: #002b5c;
+      background-color: #003366;
       color: white;
       text-align: center;
-      padding: 16px 20px;
-      font-size: 14px;
+      padding: 16px 10px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
-
 <body>
   <header>
-    <div class="logo-container">
+    <div class="logo-section">
       <img src="logo.png" alt="East Rock SCM Logo" />
-      <span style="font-size: 22px; font-weight: 700;">East Rock SCM LLC</span>
+      <span>East Rock SCM LLC</span>
     </div>
     <nav>
       <a href="#about">About</a>
@@ -125,43 +107,42 @@
   <section class="hero">
     <h1>Trusted SDVOSB Partner for Government Procurement</h1>
     <p>Veteran-led logistics and sourcing solutions for federal and state agencies</p>
-    <a href="East_Rock_SCM_Capabilities_Statement_FINAL%20(1).pdf" target="_blank" class="button">View Capabilities Statement</a>
+    <button onclick="window.open('East_Rock_SCM_Capabilities_Statement_FINAL.pdf')">View Capabilities Statement</button>
   </section>
 
-  <section class="cards" id="capabilities">
-    <div class="card">
-      <h3>Core Competencies</h3>
+  <section class="info-grid">
+    <div class="info-card">
+      <h2>Core Competencies</h2>
       <ul>
         <li>Procurement, Logistics, Medical Supply Delivery</li>
         <li>Furniture Installation, Janitorial Services</li>
         <li>Grounds Maintenance & Facility Services</li>
       </ul>
     </div>
-    <div class="card">
-      <h3>Differentiators</h3>
+    <div class="info-card">
+      <h2>Differentiators</h2>
       <ul>
         <li>Veteran-owned, agile, small business partner</li>
         <li>Responsive, reliable, and competitive</li>
         <li>Deep understanding of federal acquisition</li>
       </ul>
     </div>
-    <div class="card">
-      <h3>NAICS / PSC Codes</h3>
+    <div class="info-card">
+      <h2>NAICS / PSC Codes</h2>
       <ul>
         <li>337127, 541614, 561720</li>
         <li>423450, 423210</li>
         <li>PSC: 6515, J070, R706</li>
       </ul>
     </div>
-    <div class="card">
-      <h3>Veteran Pledge</h3>
+    <div class="info-card">
+      <h2>Veteran Pledge</h2>
       <p>Led by a U.S. Army combat veteran, we honor trust, duty, and service by providing procurement excellence to the agencies who serve our country.</p>
     </div>
   </section>
 
   <footer>
-    © 2025 East Rock SCM LLC | daniel@eastrockscmllc.com | (703) 389-9222
+    &copy; 2025 East Rock SCM LLC | daniel@eastrockscmllc.com | (703) 389-9222
   </footer>
 </body>
-
 </html>
